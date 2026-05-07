@@ -1,0 +1,155 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: ______________________
+
+Descrição: Formulário HTML5.
+
+Data: __/__/____
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <p>
+            <h2>Formulário De Cadastro</h2>
+            </p>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                    <p>E-mail.</p>
+                    <input type="email" id="email" name="email" required placeholder="Exemplo@gmail.com">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </fieldset>
+
+                <fieldset>
+                    <p>Gênero:</p>
+                    <input type="radio" id="masc" name="genero">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" id="fem" name="genero">
+                    <label for="fem">Feminino</label>
+                    <input type="radio" id="PrefNao" name="genero">
+                    <label for="PrefNao">Prefiro Não Informar</label>
+                </fieldset>
+
+                <fieldset>
+                    <p>Gênero:</p>
+                    <input type="checkbox" id="tec" name="interesses">
+                    <label for="tec">Tecnologia</label>
+                    <input type="checkbox" id="espo" name="interesses">
+                    <label for="espo">Esportes</label>
+                    <input type="checkbox" id="Musica" name="interesses">
+                    <label for="Musica">Música</label>
+                    <input type="checkbox" id="Jogos" name="interesses">
+                    <label for="Jogos">Jogos</label>
+                </fieldset>
+
+                <fieldset>
+                    <p>Estado:</p>
+                    <select name="estado" id="estado" required>
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <p>Mensagem:</p>
+                    <textarea name="Mensagem" id="Mensagem"></textarea>
+                    <br>
+
+
+                    <form action="#" method="POST" enctype="multipart/form-data"> 
+                    <label for="arquivo">Selecione uma imagem:</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".png, .jpg, .jpeg" required>
+                    <br><br> 
+                    <button type="submit">Enviar</button> 
+                    <button type="reset">Limpar</button>
+                    </form>
+                </fieldset>
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
