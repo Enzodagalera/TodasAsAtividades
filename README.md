@@ -1,5 +1,4 @@
 # TodasAsAtividades
 Todas As Atividades DEWFE
 
-Todas As Atividades Realizadas Na Faculdade Senai Bauru
-Relacionadas A Linguagem HTML
+Site Responsivo Para Celular (Atividade1) Aprendendo a implementar Bootstrap(Atividade2)
