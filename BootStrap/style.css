@@ -1,0 +1,230 @@
+:root {
+    --bg-principal: #0a0a12;
+    --bg-card: #131325;
+    --cor-neon-roxo: #bc13fe;
+    --cor-neon-ciano: #00f0ff;
+    --texto-claro: #f0f0f6;
+    --texto-mutado: #a0a0b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-principal);
+    color: var(--texto-claro);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111122;
+    padding: 20px 40px;
+    border-bottom: 2px solid var(--cor-neon-roxo);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-neon-ciano);
+    box-shadow: 0 0 10px var(--cor-neon-ciano);
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, var(--cor-neon-ciano), var(--cor-neon-roxo));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    color: var(--texto-claro);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--cor-neon-ciano);
+    text-shadow: 0 0 8px var(--cor-neon-ciano);
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+#header-main h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#header-main h3 {
+    font-size: 18px;
+    color: var(--cor-neon-ciano);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: var(--bg-card);
+    width: 18rem;
+    border: 1px solid #222244;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cor-neon-roxo);
+    box-shadow: 0 10px 20px rgba(188, 19, 254, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 20px;
+}
+
+.card-text, .Descrição {
+    color: var(--texto-mutado);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button, .botão {
+    background: linear-gradient(135deg, var(--cor-neon-roxo), #7b2cbf);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover, .botão:hover {
+    box-shadow: 0 0 15px var(--cor-neon-roxo);
+    transform: scale(1.02);
+}
+
+#Sobre {
+    background: var(--bg-card);
+    border-left: 4px solid var(--cor-neon-ciano);
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+#Sobre h2, #Sobre h3 {
+    color: var(--cor-neon-ciano);
+    margin-bottom: 15px;
+}
+
+#Sobre p {
+    color: var(--texto-claro);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#Contato {
+    background: var(--bg-card);
+    border: 1px solid #222244;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#Contato h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#Contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-control {
+    background: #0a0a12;
+    border: 1px solid #333366;
+    padding: 12px;
+    color: #fff;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--cor-neon-ciano);
+}
+
+footer {
+    background: #05050a;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #111122;
+    color: var(--texto-mutado);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar-nav {
+        gap: 15px;
+    }
+}
