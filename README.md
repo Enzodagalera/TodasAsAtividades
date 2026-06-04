@@ -1,5 +1,4 @@
 # TodasAsAtividades
 Todas As Atividades DEWFE
 
-Todas As Atividades Realizadas Na Faculdade Senai Bauru
-Relacionadas A Linguagem HTML
+Aprendendo a Criar Senha Com Requisitos, como por Exemplo Ter quantidade minima de caracteres e mexer em .type de elementos no JavaSript (Atividade1)
